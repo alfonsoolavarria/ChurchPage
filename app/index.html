@@ -13,9 +13,34 @@
     <script src="bootstrap/mdb.min.js"></script>
     <script src="bootstrap/getPoke.js"></script>
     <title></title>
+    <style media="screen">
+      .navbar{
+
+        background-color: #0077b6 !important;
+      }
+      .container-fluid{
+        margin-left: 150px;
+      }
+
+    </style>
   </head>
   <body>
-    Soy el index
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <form class="d-flex input-group w-auto">
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <span class="input-group-text text-white border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </form>
+      </div>
+    </nav>
   </body>
 
 </html>
