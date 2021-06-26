@@ -1,0 +1,13 @@
+:root{
+    --color-primario:#48cae4;
+    --color-secundario: #00b4d8 ;
+    --color-terceario: #023e8a;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#form_register{
+   width: 460px;
+}
