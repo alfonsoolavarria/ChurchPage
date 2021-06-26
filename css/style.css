@@ -1,0 +1,37 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-position: center;
+   background-size: 100%;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    background:linear-gradient(39deg, rgb(0, 67, 190) 0%, rgb(0, 213, 255) 92%);
+    opacity: 0.7;
+    
+}
+
+
+.img-fondo {
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    opacity: 40%;
+}
+
+.caja {
+    position: relative;
+    width: 100%;
+    height: 534px;
+    border-radius: 10px;
+    background-color: white;
+   margin: 0px auto;
+   margin-top: 5%;
