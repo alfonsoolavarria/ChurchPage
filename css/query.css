@@ -1,0 +1,13 @@
+/* TABLET */
+@media (max-width: 768px) {
+    #ocultar{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        background: none;
+        padding: 0px;
+    }
+}
