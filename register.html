@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear cuenta - El CCM</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear cuenta - El CCM</title>
 
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-  
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/query.css">
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
-  <body>
-    
-    <div class="container rounded-lg">
-      <div class="row z-depth-2">
-        <div class="col px-4">
-          <!-- Titulo -->
-          <h2 class="font-weight-bold text-body text-left m-0 mb-2 pt-5">Crear cuenta</h2>
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-          <!-- Formulario -->
-          <form action="#" class="pb-4 pt-3">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-            <div class="row pt-3">
-              <div class="col-sm">
-                  <!-- Nombre -->
-                  <div class="md-form md-outline m-0">
-                      <input type="text" id="materialRegisterFormFirstName" class="form-control" name="nombre">
-                      <label for="materialRegisterFormFirstName">Nombre</label>
-                  </div>
-              </div>
-              <div class="col-sm">
-                  <!-- Apellido -->
-                  <div class="md-form md-outline m-0">
-                      <input type="text" id="materialRegisterFormLastName" class="form-control" name="apellido">
-                      <label for="materialRegisterFormLastName">Apellido</label>
-                  </div>
+<body>
+
+  <div class="container rounded-lg">
+    <div class="row z-depth-2">
+      <div class="col px-4">
+        <!-- Titulo -->
+        <h2 class="font-weight-bold text-body text-left m-0 mb-2 pt-5">Crear cuenta</h2>
+
+        <!-- Formulario -->
+        <form action="#" class="pb-4 pt-3" id="form-register">
+
+          <div class="row pt-3">
+            <div class="col-sm">
+              <!-- Nombre -->
+              <div class="md-form md-outline m-0">
+                <input type="text" id="materialRegisterFormFirstName" class="form-control" name="nombre">
+                <label for="materialRegisterFormFirstName">Nombre</label>
               </div>
             </div>
-
-
-
-            <div class="row pt-3">
-              <div class="col-sm">
-                <!-- Correo -->
-                <div class="md-form md-outline m-0">
-                  <input type="text" id="materialSubscriptionFormEmail" class="form-control" name="direccion">
-                  <label for="materialSubscriptionFormEmail">Tu dirección</label>
-                </div>
+            <div class="col-sm">
+              <!-- Apellido -->
+              <div class="md-form md-outline m-0">
+                <input type="text" id="materialRegisterFormLastName" class="form-control" name="apellido">
+                <label for="materialRegisterFormLastName">Apellido</label>
               </div>
-            </div>
-            
-            
-        
-            <div class="row pt-3">
-              <div class="col-sm">
-                <!-- Contraseña -->
-                <div class="md-form md-outline m-0">
-                  <input type="password" id="materialLoginFormPassword01" class="form-control" name="password">
-                  <label for="materialLoginFormPassword01">Contraseña</label>
-                </div>
-              </div>
-
-              <div class="col-sm">
-                <!-- Repite Contraseña -->
-                <div class="md-form md-outline m-0">
-                  <input type="password" id="materialLoginFormPassword02" class="form-control" name="password">
-                  <label for="materialLoginFormPassword02">Repite contraseña</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="row pt-3">
-              <div class="col-sm">
-                <!-- Email -->
-                <div class="md-form md-outline m-0">
-                  <input type="email" id="materialLoginFormEmail" class="form-control" name="email">
-                  <label for="materialLoginFormEmail">Email</label>
-                </div>
-              </div>
-
-              <div class="col-sm">
-                <div id="date-picker-example" class="md-form md-outline m-0" inline="true">
-                  <input placeholder="Selecione Fecha" type="date" id="example" class="form-control" min="1980-01-01" max="2021-12-31">
-                  <label for="example">Fecha de nacimiento</label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Numero de telefono -->
-            <div class="row pt-3">
-              <div class="col-sm">
-                <div class="md-form md-outline m-0">
-                  <input type="text" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                  <label for="materialRegisterFormPhone">Número de teléfono</label>
-                </div>
-              </div>
-            </div>
-            
-          </form>
-
-          <div class="row col-sm m-0 py-5">
-            <div class="col pr-5">
-                <button type="button" class="btn btn-lg p-2 px-4 btn-none text-capitalize font-weight-bold rounded-lg">Iniciar sesión</button>
-            </div>
-
-            <div class="col pl-4">
-                <input class="btn btn-lg p-2 px-4 btn-color text-capitalize font-weight-bold rounded-lg" type="submit" value="Crear cuenta">
             </div>
           </div>
-        </div>
 
 
-        <div id="ocultar" class="col pr-0 pb-0">
-          <img class="rounded-right" src="img/imgregister.jpg" width="100%" height="100%" alt="">
+
+          <div class="row pt-3">
+            <div class="col-sm">
+              <!-- direccion -->
+              <div class="md-form md-outline m-0">
+                <input type="text" id="materialSubscriptionFormEmail" class="form-control" name="direccion">
+                <label for="materialSubscriptionFormEmail">Tu dirección</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row pt-3">
+            <div class="col-sm ">
+              <!-- Contraseña -->
+              <div class="md-form md-outline m-0">
+                <input type="password" id="materialLoginFormPassword01" class="form-control" name="password">
+                <label for="materialLoginFormPassword01">Contraseña</label>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <!-- Repite Contraseña -->
+              <div class="md-form md-outline m-0">
+                <input type="password" id="materialLoginFormPassword02" class="form-control" name="password">
+                <label for="materialLoginFormPassword02">Repite contraseña</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-3 ">
+            <div class="col-sm">
+              <!-- Email -->
+              <div class="md-form md-outline m-0 ">
+                <input type="email" id="materialLoginFormEmail" class="form-control" name="email">
+                <label for="materialLoginFormEmail">Email</label>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div id="date-picker-example" class="md-form md-outline m-0 box_date" inline="true">
+                <input placeholder="Selecione Fecha" type="date" id="example" class="form-control" min="1980-01-01"
+                  max="2021-12-31">
+                <label for="example">Fecha de nacimiento</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Numero de telefono -->
+          <div class="row pt-3">
+            <div class="col-sm">
+              <div class="md-form md-outline m-0">
+                <input type="text" id="materialRegisterFormPhone" class="form-control"
+                  aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="materialRegisterFormPhone">Número de teléfono</label>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="row col-sm m-0 py-5 box_btn">
+          <div class="col pr-5 btn-iniciar">
+            <button type="button"
+              class="btn btn-lg p-2 px-4 btn-none text-capitalize font-weight-bold rounded-lg">Iniciar sesión</button>
+          </div>
+
+          <div class="col pl-4 btn_crear">
+            <input class="btn btn-lg p-2 px-4 btn-color text-capitalize font-weight-bold rounded-lg" type="submit"
+              value="Crear cuenta">
+          </div>
         </div>
       </div>
+
+
+      <div id="img-main" class="col pr-0 pb-0">
+        <img class="rounded-right" src="img/imgregister.jpg" width="100%" height="100%" alt="">
+      </div>
     </div>
+  </div>
 
 
 
 
-    <!-- SCRIPTS -->
+  <!-- SCRIPTS -->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  </body>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
 </html>
