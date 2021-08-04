@@ -1,24 +1,29 @@
-body{
-    background:#f1f1f1;
+/*Archivos Importados*/
+@import url(carousel.css);
+@import url(article-left.css);
+@import url(article-center.css);
+@import url(article-right.css);
+
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background: radial-gradient(circle, rgba(255,255,255,1), rgba(226,226,226,1) 110%);
+}
+
+/*
+////////////////////////////////HEADER//////////////////////////
+*/
+
 .icono-search{
-   color: rgb(63, 63, 63);
-   font-size: 20px;
-   z-index: 10;
-}
-.navbar{
-    background: #0077b6;
-    padding: 0px !important;   
-}
-.btn-default{
-    background: orange;
-    width:80px;
-    padding: 12.5px;
-}
-form-control{
-    padding: 25px;
-    font-family: 20px;
+    color: rgb(88, 88, 88);
+    font-size: 20px;
+    z-index: 10;
 }
 
 .input-search{
@@ -26,6 +31,8 @@ form-control{
     padding: 5px;
     border: none;
     width: 500px;
+    outline: none ; 
+    font-weight: 300;
 }
 
 .btn-search{
@@ -35,36 +42,39 @@ form-control{
     border: none;
     height: 31px;
     border:none;
-    border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 2px 2px 0px;
     z-index: 10;
-}
-.icon-group{
-    height: 100%;
-    margin: 0px;
-    padding: 0;
-    margin-right: 20px;
+    padding: 0px 10px;
 }
 
-.icon-group li a i{
-    font-size: 25px;
-    height: 100%;
-    margin-left: 5px;
+.fondo-nav{
+    background-image: linear-gradient(to top, #0077b6 0%, #158fd1 100%);
+    padding: 0px;
+    box-shadow: 0px 0px 25px rgba(34, 34, 34, 0.438);
 }
 
-.icon-group2 li a i{
-    font-size: 25px;
-    height: 100%;
+.item-nav{
+    font-size: 20px ;
+    box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-.icon-group2 li{
-    border-left: 1px solid rgba(255, 255, 255, 0.322);
+
+.item-nav ul li a{
+    margin: none !important;
 }
 
-.des{
-    margin-left: 100px;
+.arrow{
+    font-size: 15px;
+    align-items: center;
+    margin: auto;
 }
 
-.centrar{
-    display: flex;
-    justify-content: center;
+.btn-option{
+    border: none;
+    background: transparent;
 }
+
+/*
+////////////////////////////PUBLIC SECTION///////////////////
+*/
+

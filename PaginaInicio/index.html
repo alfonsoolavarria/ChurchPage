@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-
+    <title>ChurchPage</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
@@ -20,49 +19,460 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!--Main Navigation-->
-<header>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar">
-    <ul class="navbar-nav mr-auto des">
-      <li class="nav-item active">
-        <form class="">
-          <div class="input-group">
-            <input class="form-control input-search form-control-sm ml-3 w-75 " type="text" placeholder="Search"
-              aria-label="Search">
-              <div class="btn-group">
-                <button class="btn-search" type="submit"><i class="fas fa-search icono-search" aria-hidden="true"></i></button>
-              </div>
-          </div>
-        </form>
-      </li>
-    </ul>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse centrar" id="navbarSupportedContent">
-      
-      <ul class="navbar-nav  icon-group">
-        <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-comments"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-bell"></i></a>
-        </li>
-      </ul>
 
-      <ul class="navbar-nav  icon-group2">
-        <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-user"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<script src="codigo.js"></script>
+    <!--Main Navigation-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark justify-content-around fondo-nav ">
+        <div class="container justify-content-around ">
+          <a class="navbar-brand" href="#"><strong></strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active py-3">
+              <div class="">
+                <div class="input-group">
+                  <input class="form-control input-search form-control-sm ml-3 w-80 " type="text" placeholder="Search"
+                    aria-label="Search" >
+                  <div class="btn-group">
+                    <button class="btn-search" type="submit"><i class="fas fa-search icono-search" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-flex-icons justify-content-center text-center">
+              <li class="nav-item item-nav   ">
+                <a class="nav-link py-3 px-3"><i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item item-nav   ">
+                <a class="nav-link py-3 px-3 "><i class="fas fa-comments"></i></a>
+              </li>
+              <li class="nav-item item-nav   ">
+                <a class="nav-link py-3 px-3"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item item-nav ml-5 ">
+                <div class="btn-group">
+                  <a type="button" class="dropdown-toggle px-3 nav-link py-3 btn-option" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Perfil</a>
+                    <a class="dropdown-item" href="#">Noticias</a>
+                    <a class="dropdown-item" href="#">Configuraciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Salir</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Sections and articles-->
+    <section>
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="col-md-3 borde">
+            <div class="card">
+              <div class="card-header">
+                <div class="image-container">
+                  <img class="img" src="img/article/profile.png" alt="user"/>
+                </div>
+                <div class="fond-profile">
+                  <img src="img/article/fondo-prof2.png" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="fil mt-5 pb-5">
+                  <h5 class="card-title">Usuario</h5>
+                </div>
+                <div class="fil py-3">
+                  <p>Amigos</p>
+                  <span>34</span>
+                </div>
+                <div class="fil py-3">
+                  <p>Publicaciones</p>
+                  <span>155</span>
+                </div>
+              </div>
+              <div class="text-center py-2"> 
+                <a href="#" class="v-profile">Ver Perfil</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-8 borde">
+            <div class="sec-publicar">
+              <div class="card-header2 mt-3">
+              </div>
+              <div class="card2 pb-2 d-flex justify-content-around align-items-center">
+                <div class="image-container2">
+                  <img class="img" src="img/article/profile.png" alt="user"/>
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-light">Agregar Nota</button>
+                  <button type="button" class="btn btn-publicar">Publicar</button>
+                </div>
+             </div>
+            </div>
+            <div class="carousel-container">
+              <div class="Carousel">
+                <button class="slick-arrow slick-prev" id="button-prev">
+                  <!--BOTON PREV-->
+                  <i class="fas fa-angle-left"></i>
+                </button>
+                <div class="carousel-list"> 
+                      <div class="slick-list" id="slick-list">
+                          <div class="slick-track" id="track">
+                              <div class="slick">
+                                  <div class="container">
+                                      <div class="row centrar">
+                                          <div class="col">
+                                              <div class="profile-card-4 text-center">
+                                                  <img src="./img/carousel/6.png" class="img img-responsive">
+                                                  <div class="profile-content">
+                                                      <div class="profile-name">
+                                                          <p>Nombre de Usuario</p>
+                                                      </div>
+                                                      <div class="row centrar">
+                                                          <div class="col">
+                                                              <button type="button" class="btn btn-primary">Agregar</button>
+                                                          </div>  
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slick">
+                                <div class="container">
+                                  <div class="row centrar">
+                                      <div class="col">
+                                          <div class="profile-card-4 text-center">
+                                              <img src="./img/carousel/6.png" class="img img-responsive">
+                                              <div class="profile-content">
+                                                  <div class="profile-name">
+                                                      <p>Nombre de Usuario</p>
+                                                  </div>
+                                                  <div class="row centrar">
+                                                      <div class="col">
+                                                          <button type="button" class="btn btn-primary">Agregar</button>
+                                                      </div>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                </div>
+                <button class="slick-arrow slick-next" id="button-next">
+                  <!--BOTON NEXT-->
+                  <i class="fas fa-angle-right"></i>
+                </button> 
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 borde">
+            <div class="card3 pb-2 d-flex justify-content align-items-center">
+              <div class="image-container3">
+                <img class="img" src="img/Logo.jpeg" alt="user"/>
+              </div>
+              <div class="divi py-2">
+                <p>Invitar amigos</p>  
+                <i class="fas fa-users"></i>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -71,5 +481,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script src="./js/codigo.js"></script>
   </body>
 </html>
