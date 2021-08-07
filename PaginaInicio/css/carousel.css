@@ -19,8 +19,6 @@ a{
 
 .Carousel{
     width: 100%;
-    align-items: center;
-    position: relative;
 }
 
 .carousel-list{
@@ -32,14 +30,30 @@ a{
 }
 
 .Carousel h2{
-    font-size: 26px;
+    font-size: 16px;
+    margin-left: 30px;
     line-height: 38px;
-    padding-bottom: 24px;
     opacity: .9;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
+    letter-spacing: 5px;
 }
+
+.subgerencia{
+    border-top: 1px solid rgba(189, 189, 189, 0.589);
+    border-left: 1px solid rgba(189, 189, 189, 0.589);
+    border-right: 1px solid rgba(189, 189, 189, 0.589);
+}
+
+.subgerencia2{
+    text-align: center;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.589);
+    border-left: 1px solid rgba(189, 189, 189, 0.589);
+    border-right: 1px solid rgba(189, 189, 189, 0.589);
+}
+
+.subgerencia2 h2{
+    opacity: .7;
+}
+
 
 /* IMAGES*/
 
@@ -66,7 +80,7 @@ a{
 .slick{
     position: relative;
     width: 275px;
-    margin: 0px 10px;
+    margin: 0px;
     
     float: left;
     box-sizing: border-box;
@@ -101,13 +115,10 @@ a{
 }
 
 .slick-prev{
-    left: -20px;
-    bottom: 45%;
-    
+    left: 20px;
 }
 .slick-next{
-    right: -20px;
-    bottom: 45%;
+    right: 20px;
 } 
 
 /*
@@ -116,8 +127,8 @@ a{
  
 .img-responsive{
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
 }
 
 .container {
@@ -125,7 +136,7 @@ a{
 }
 
 .profile-card-4 {
-    max-width: 300px;
+    max-width: 200px;
     background-color: #FFF;
     border-radius: 5px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -145,26 +156,11 @@ a{
     background-color: #FFF;
 }
 
-.profile-card-4 .profile-name {
-    font-weight: bold;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: -70px;
-    color: #FFF;
-    font-size: 17px;
-}
-
-.profile-card-4 .profile-name p {
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-}
 
 .profile-card-4 .profile-description {
     color: #777;
-    font-size: 12px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px;
 }
 
 .profile-card-4 .profile-content::before {
@@ -186,4 +182,33 @@ a{
 
 .centrar{
     align-items: center;
+}
+
+.v-profile{
+    border-top: 1px solid rgba(95, 95, 95, 0.192);
+   
+}
+
+.v-profile:hover{
+    background: var(--color5);
+    color: #fff;
+}
+.v-profile a {
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    color: #777;
+}
+
+.v-profile a:hover{
+    color: #fff;
+}
+
+.btn-agregar{
+    background: #0077b6;
+    color: #fff;
+}
+
+.btn-agregar:hover{
+    color: #fff;
 }

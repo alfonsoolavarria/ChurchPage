@@ -4,6 +4,20 @@
 @import url(article-center.css);
 @import url(article-right.css);
 
+/*Colores*/
+
+:root{
+    --color1: #03045E;
+    --color2: #023E8A;
+    --color3: #0077b6;
+    --color4: #0096C7;
+    --color5: #00B4D8;
+    --color6: #48CAE4;
+    --color7: #90E0EF;
+    --color8: #ADE8F4;
+    --color9: #CAF0F8;
+}
+
 /*General*/
 
 *{
@@ -33,6 +47,7 @@ body{
     width: 500px;
     outline: none ; 
     font-weight: 300;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .btn-search{
@@ -42,7 +57,7 @@ body{
     border: none;
     height: 31px;
     border:none;
-    border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 50% 50% 0px;
     z-index: 10;
     padding: 0px 10px;
 }
@@ -51,6 +66,11 @@ body{
     background-image: linear-gradient(to top, #0077b6 0%, #158fd1 100%);
     padding: 0px;
     box-shadow: 0px 0px 25px rgba(34, 34, 34, 0.438);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 4;
+    left: 0;
 }
 
 .item-nav{
