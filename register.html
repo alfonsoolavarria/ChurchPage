@@ -23,44 +23,43 @@
     <div class="row z-depth-2">
       <div class="col px-4">
         <!-- Titulo -->
-        <h2 class="font-weight-bold text-body text-left m-0 mb-2 pt-5">Crear cuenta</h2>
+        <h2 class=" text-body font-weight-bold text-center text-lg-left m-0 mb-2 pt-5">Crear cuenta</h2>
 
         <!-- Formulario -->
-        <form action="#" class="pb-4 pt-3" id="form-register">
+        <form action="#" class="pt-3" id="form-register">
 
           <div class="row pt-3">
-            <div class="col-sm">
+            <div class="col-sm-12 col-lg mb-2">
               <!-- Nombre -->
               <div class="md-form md-outline m-0">
                 <input type="text" id="materialRegisterFormFirstName" class="form-control" name="nombre">
                 <label for="materialRegisterFormFirstName">Nombre</label>
               </div>
             </div>
-            <div class="col-sm">
+
+            <div class="col-sm-12 col-lg mb-2">
               <!-- Apellido -->
               <div class="md-form md-outline m-0">
                 <input type="text" id="materialRegisterFormLastName" class="form-control" name="apellido">
                 <label for="materialRegisterFormLastName">Apellido</label>
               </div>
             </div>
-          </div>
 
 
-
-          <div class="row pt-3">
-            <div class="col-sm">
+            <div class="col-sm-12 col-lg-12">
               <!-- direccion -->
               <div class="md-form md-outline m-0">
                 <input type="text" id="materialSubscriptionFormEmail" class="form-control" name="direccion">
                 <label for="materialSubscriptionFormEmail">Tu dirección</label>
               </div>
             </div>
+
           </div>
 
 
+          <div class="row mb-0">
 
-          <div class="row pt-3">
-            <div class="col-sm ">
+            <div class="col-sm-12 col-lg mt-2 mb-2">
               <!-- Contraseña -->
               <div class="md-form md-outline m-0">
                 <input type="password" id="materialLoginFormPassword01" class="form-control" name="password">
@@ -68,17 +67,19 @@
               </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm-12 col-lg mt-lg-2 mb-lg-2">
               <!-- Repite Contraseña -->
               <div class="md-form md-outline m-0">
                 <input type="password" id="materialLoginFormPassword02" class="form-control" name="password">
                 <label for="materialLoginFormPassword02">Repite contraseña</label>
               </div>
             </div>
+
           </div>
 
-          <div class="row pt-3 ">
-            <div class="col-sm">
+          <div class="row mt-sm-2">
+
+            <div class="col-sm-12 col-lg mb-2">
               <!-- Email -->
               <div class="md-form md-outline m-0 ">
                 <input type="email" id="materialLoginFormEmail" class="form-control" name="email">
@@ -86,17 +87,19 @@
               </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm-12 col-lg mb-2">
               <div id="date-picker-example" class="md-form md-outline m-0 box_date" inline="true">
                 <input placeholder="Selecione Fecha" type="date" id="example" class="form-control" min="1980-01-01"
                   max="2021-12-31">
                 <label for="example">Fecha de nacimiento</label>
               </div>
             </div>
+
           </div>
 
           <!-- Numero de telefono -->
-          <div class="row pt-3">
+          <div class="row">
+
             <div class="col-sm">
               <div class="md-form md-outline m-0">
                 <input type="text" id="materialRegisterFormPhone" class="form-control"
@@ -104,26 +107,29 @@
                 <label for="materialRegisterFormPhone">Número de teléfono</label>
               </div>
             </div>
+
           </div>
 
         </form>
 
-        <div class="row col-sm m-0 py-5 box_btn">
-          <div class="col pr-5 btn-iniciar">
+        <div class="row m-0 py-5 text-center">
+
+          <div class="col-12  col-lg btn-iniciar">
             <button type="button"
               class="btn btn-lg p-2 px-4 btn-none text-capitalize font-weight-bold rounded-lg">Iniciar sesión</button>
           </div>
 
-          <div class="col pl-4 btn_crear">
+          <div class="col-12  col-lg btn_crear">
             <input class="btn btn-lg p-2 px-4 btn-color text-capitalize font-weight-bold rounded-lg" type="submit"
               value="Crear cuenta">
           </div>
         </div>
+
       </div>
 
 
-      <div id="img-main" class="col pr-0 pb-0">
-        <img class="rounded-right" src="img/imgregister.jpg" width="100%" height="100%" alt="">
+      <div id="img-main" class="col pr-0 pb-0 d-md-block d-none">
+        <img class="rounded-right" src="img/imgregister.jpg" width="100%" height="100%" alt="imagen de jovenes">
       </div>
     </div>
   </div>
